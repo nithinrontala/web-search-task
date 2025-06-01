@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from collections import defaultdict
 from urllib.parse import urljoin, urlparse
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 class WebCrawler:
     def __init__(self):
@@ -107,6 +110,3 @@ if __name__ == "__main__":
     unittest.main()  # Run unit tests
     main()  # Run your main application logic 
 
-
-if __name__ == "__main__":
-    main()
